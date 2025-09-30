@@ -1,12 +1,9 @@
 import React from 'react';
-import { Inter } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata = {
-  title: 'Data Room - Secure Document Management',
-  description: 'A modern, secure document management and collaboration platform',
+  title: 'DataRoom Enterprise',
+  description: 'Enterprise Document Management Platform',
 };
 
 export default function RootLayout({
@@ -16,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
-      </body>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }
